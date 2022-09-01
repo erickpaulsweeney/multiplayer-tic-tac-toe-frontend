@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import { nanoid } from "nanoid";
 import Cell from "./Cell";
 
-const socket = io("http://localhost:8000");
+const socket = io("https://multiplayer-tictactoe-backend.herokuapp.com/");
 
 export default function App() {
     const [player, setPlayer] = useState("X");
